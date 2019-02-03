@@ -19,10 +19,10 @@ function peco_select_history
 end
 
 function peco-ssh
-  grep "Host " ~/.ssh/config | cut -d \  -f 2 | peco | read hostname
+  grep "Host " ~/.ssh/config | cut -d \  -f 2 | peco | read target
 
-  if [ $hostname ]
-    ssh $hostname
+  if [ $target ]
+    ssh $target
   end
 end
 alias ssh-peco peco-ssh
