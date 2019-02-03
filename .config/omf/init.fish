@@ -9,10 +9,10 @@ function peco_select_history
     set peco_flags --query "$argv"
   end
 
-  history | peco $peco_flags | read foo
+  history | peco $peco_flags | read command
 
-  if [ $foo ]
-    commandline $foo
+  if [ $command ]
+    commandline $command
   else
     commandline ''
   end
