@@ -1,4 +1,5 @@
 package direnv
 package https://github.com/yoshiori/fish-peco_select_ghq_repository
+package nodenv
 package rbenv
 theme agnoster
